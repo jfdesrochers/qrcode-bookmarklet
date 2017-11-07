@@ -28,7 +28,7 @@ cleanUp();
 
 var selectedText = getSelected();
 var qrData = (selectedText == false) ? customURL(document.location.href) : selectedText;
-
+console.log(qrdata);
 var shade = document.createElement('div');
 	shade.setAttribute('class','shaunsational_qr');
 	shade.setAttribute('id','shade');
