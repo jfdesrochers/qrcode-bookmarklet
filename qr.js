@@ -1667,12 +1667,12 @@ console.log(qrData);
 var shade = document.createElement('div');
 	shade.setAttribute('class','shaunsational_qr');
 	shade.setAttribute('id','shade');
-	shade.setAttribute('style','background-color:#000;height:100%;left:0;opacity:0.65;position:fixed;top:0;width:100%;z-index:1001;');
+	shade.setAttribute('style','background-color:#000;height:100%;left:0;opacity:0.65;position:fixed;top:0;width:100%;z-index:10001;');
 
 var centr = document.createElement('div');
 	centr.setAttribute('class','shaunsational_qr');
 	centr.setAttribute('id','centr');
-	centr.setAttribute('style','background-color:transparent;height:100%;left:0;position:fixed;text-align:center;top:0;width:100%;z-index:1001;');
+	centr.setAttribute('style','background-color:transparent;height:100%;left:0;position:fixed;text-align:center;top:0;width:100%;z-index:10001;');
 
 var qr = qrcode(6, 'L');
 	qr.addData(qrData);
@@ -1681,13 +1681,13 @@ var qr = qrcode(6, 'L');
 var qrdiv = document.createElement('div');
 	qrdiv.setAttribute('class','shaunsational_qr');
 	qrdiv.setAttribute('id','qrdiv');
-	qrdiv.setAttribute('style','margin:25px auto auto auto;background-color:#FFF;height:320px;width:320px;z-index:1001;-moz-border-radius:20px;');
+	qrdiv.setAttribute('style','margin:25px auto auto auto;background-color:#FFF;height:400px;width:400px;z-index:10001;border-radius:20px;');
 	qrdiv.innerHTML = qr.createImgTag(8);
 
 var qrurl = document.createElement('div');
 	qrurl.setAttribute('class','shaunsational_qr');
 	qrurl.setAttribute('id','qrurl');
-	qrurl.setAttribute('style','background:#FFF;margin:5px auto auto auto;padding:2px 15px;cursor:pointer;width:290px;font-size:10px;color:#333;-moz-border-radius:20px;text-align:left;overflow:hidden;');
+	qrurl.setAttribute('style','background:#FFF;margin:5px auto auto auto;padding:2px 15px;cursor:pointer;width:370px;font-size:10px;color:#333;border-radius:20px;text-align:left;overflow:hidden;');
 var qrurl_text = document.createTextNode(qrData);
 	qrurl.appendChild(qrurl_text);
 
