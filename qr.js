@@ -1681,7 +1681,7 @@ var qr = qrcode(6, 'L');
 var qrdiv = document.createElement('div');
 	qrdiv.setAttribute('class','shaunsational_qr');
 	qrdiv.setAttribute('id','qrdiv');
-	qrdiv.setAttribute('style','margin:25px auto auto auto;background-color:#FFF;height:400px;width:400px;z-index:10001;border-radius:20px;');
+	qrdiv.setAttribute('style','margin:25px auto auto auto;background-color:#FFF;height:400px;width:400px;z-index:10001;');
 	qrdiv.innerHTML = qr.createImgTag(8);
 
 var qrurl = document.createElement('div');
