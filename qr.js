@@ -1643,9 +1643,9 @@ function customURL(url) {
 
 function getSelected() {
 	if (window.getSelection) {
-		return window.getSelection();
+		return window.getSelection().toString();
 	} else if (document.getSelection) {
-		return document.getSelection();
+		return document.getSelection().toString();
 	} else if (document.selection) {
 		return document.selection.createRange().text;
 	}
@@ -1674,7 +1674,7 @@ var centr = document.createElement('div');
 	centr.setAttribute('id','centr');
 	centr.setAttribute('style','background-color:transparent;height:100%;left:0;position:fixed;text-align:center;top:0;width:100%;z-index:1001;');
 
-var qr = qrcode(4, 'H');
+var qr = qrcode(5, 'L');
 	qr.addData(qrData);
 	qr.make();
 
