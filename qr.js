@@ -1674,7 +1674,7 @@ var centr = document.createElement('div');
 	centr.setAttribute('id','centr');
 	centr.setAttribute('style','background-color:transparent;height:100%;left:0;position:fixed;text-align:center;top:0;width:100%;z-index:1001;');
 
-var qr = qrcode(5, 'L');
+var qr = qrcode(6, 'L');
 	qr.addData(qrData);
 	qr.make();
 
